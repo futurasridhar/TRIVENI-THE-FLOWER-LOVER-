@@ -74,7 +74,7 @@ function setup() {
   // create the gameover text.
   go = createSprite (290,50, 10, 10);
   go.addImage ("nextrun",goi);
-  go.visible = false ;
+  
   
   // Create a new group named Obstaclegroup.
   obstacleGroup = createGroup ();
@@ -84,6 +84,8 @@ function setup() {
 function draw() {
 
   background ("lightblue");
+  
+  go.visible = false ;
   
   // If space key is pressed then:
   if(keyDown("space")&& girl.y >= 100) {
